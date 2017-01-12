@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="container-fluid" ng-app="projectHunt" ng-controller="mainController">
+
+<!--  Nav Bar -->
+ <div class="row navBar">
+  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+    <img src="images/logo.png" alt="elevation_logo" class="Elevlogo">
+  </div>
+
+  <div class="navBarMiddleColumn col-xs-8 col-sm-8 col-md-8 col-lg-8">
+    <input type="text" placeholder="Discover some great companies..." class="form-control searchBar">
+  </div>
+
+<div class="navBarRightColumn col-xs-2 col-sm-2 col-md-2 col-lg-2"><img src="images/profilePic.png" class="profilePic"></div>
+</div>
+
+<hr>
+
+<!-- Companies and Projects Header-->
+
+<div class="row">
+  <div class="col-md-12" >
+ 
+    </div>
+    </div>
+
+
+<div class="background" >
+
+  <div class="row companyAndProjectTitlesContainer">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 companyTitle"><h2>Login<h2></div>
+    <hr>
+         
+
+          <!-- render projects here -->
+
+          <form ng-submit="addProject()">
+            <div class="form-style">
+            <br>
+            <br>
+           <h4 align="center"></h4>
+            <br>
+           <div class="form-group">
+             <input type="text" class="form-control" placeholder="Username or Email" ng-model="image"></input>
+           </div>
+
+
+           <div class="form-group">
+             <input type="text" class="form-control" placeholder="Password"></input>
+           </div>
+
+              <br>
+
+              <div text-align"center">
+            <button type="submit" class="submit-button">Login</button>
+                </div>
+
+                <br>
+
+                <br>
+                
+                <p><a href="register.html">Not Registered Yet? Sign Up Today.</a></p>
+          </form>
+        </div>
+            <br>
+
+        </div>
+      </div>
+
+
+
+
+  </div>
+
+</div>
+<!-- Scripts -->
+<script src="angular/angular.min.js"></script>
+<script src="angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="js/module.js"></script>
+<script src="js/services/mainService.js"></script>
+<script src="js/controllers/mainCtrl.js"></script>
+
+</body>
+</html>
