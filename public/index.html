@@ -6,6 +6,10 @@
   <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="angular/angular.min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
 <script src="angular-ui-router/release/angular-ui-router.min.js"></script>
 </head>
 <!-- ABC -->
@@ -21,8 +25,55 @@
       <input type="text" placeholder="Discover some great companies..." class="form-control searchBar">
     </div>
 
-    <div class="navBarRightColumn col-xs-2 col-sm-2 col-md-2 col-lg-2"><img src="images/profilePic.png" class="profilePic"></div>
+    <div class="navBarRightColumn col-xs-2 col-sm-2 col-md-2 col-lg-2">
+    <div id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="card">
+        <div class="card-header" role="tab" id="headingOne">
+         
+        </div>
+
+        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+          
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab" id="headingTwo">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <img src="images/pj.png" class="profilePic">
+            </a>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="card-block">
+           <a class="signup" href="login.html">Login</a>
+           <a class="signup" href="register.html">Sign Up</a>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+
+
+
+
   </div>
+
+<!-- 
+  <div class="navBarRightColumn col-xs-2 col-sm-2 col-md-2 col-lg-2">
+   
+    <button data-toggle="collapse" data-target="#demo"><img src="images/profilePic.png" class="profilePic">
+</button>
+
+    <div id="demo" class="collapse">
+    Lorem ipsum dolor text....
+    </div> -->
+
+<!-- Closing nvabar -->
+<!--   </div>
+ -->
+
 
   <hr>
 
@@ -35,6 +86,7 @@
 <script src="js/services/mainService.js"></script>
 <script src="js/controllers/mainCtrl.js"></script>
 <script src="js/controllers/newProjectForm.js"></script>
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>
